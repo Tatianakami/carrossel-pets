@@ -1,90 +1,52 @@
-# 🐶 Carrossel de Pets Vue 3
+# 🐾 Carrossel de Pets Vue 3
 
 <div align="center">
-  <img src="./image.png" width="600" alt="Demonstração do Carrossel"/>
+  <img src="./src/image.png" width="400" alt="Demonstração do Carrossel"/>
   
-  [![Vue 3](https://img.shields.io/badge/Vue-3.x-42b883?logo=vue.js)](https://vuejs.org/)
+  [![Vue 3](https://img.shields.io/badge/Vue-3-42b883?logo=vue.js)](https://vuejs.org/)
+  [![Vite](https://img.shields.io/badge/Vite-4.x-646CFF?logo=vite)](https://vitejs.dev/)
   [![Licença MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 </div>
 
----
+## ✨ Funcionalidades
+- 🖼️ Carrossel de imagens responsivo
+- 📲 Navegação por botões e indicadores
+- 🗂️ Upload de novas imagens (JPEG/PNG/WebP)
+- 💾 Persistência no localStorage
+- 📱 Compatível com mobile
 
-## 📌 Índice
-- [Recursos](#-recursos)
-- [Instalação](#-instalação)
-- [Uso Básico](#-uso-básico)
-- [Personalização](#-personalização)
-- [API](#-api)
-- [Limitações](#-limitações)
-- [Contribuição](#-contribuição)
-- [Licença](#-licença)
+## 🚀 Começando
 
----
-
-## ✨ Recursos
-| Funcionalidade          | Descrição                                                                 |
-|-------------------------|---------------------------------------------------------------------------|
-| **Upload de Imagens**   | Suporte a JPEG, PNG, WebP (até 15MB por arquivo)                         |
-| **Controles Intuitivos**| Navegação por botões/indicadores                                         |
-| **Persistência**        | Salva automaticamente no `localStorage`                                  |
-| **Otimização**          | Compressão automática (800x600px, 70% qualidade)                         |
-| **Responsivo**          | Adaptável a desktop, tablet e mobile                                     |
-
----
-
-## 🚀 Instalação
+### Instalação
 ```bash
-# Via npm
-npm install carrossel-pets-vue
-
-# Via yarn
-yarn add carrossel-pets-vue
-
-💻 Uso Básico
-vue
-<template>
-  <CarrosselPets />
-</template>
-
-<script setup>
-import CarrosselPets from 'carrossel-pets-vue'
-</script>
-
-🎨 Personalização
-Props Disponíveis
-javascript
-{
-  maxImages: Number,   // Default: 15
-  showControls: Boolean // Default: true
-}
-
-Estilos
-css
-:root {
-  --carrossel-primary: #4a6fa5;
-  --carrossel-border-radius: 12px;
+npm install
 
 
-⚠️ Limitações
-Máximo de 15 imagens simultâneas
+Desenvolvimento
+bash
+npm run dev
 
-Não suporta vídeos ou GIFs animados
+Compilação para produção
+bash
+npm run build
 
-Depende do localStorage do navegador
+📚 Documentação
+O componente principal está em:
 
+src/components/Carrossel.vue
 
-🤝 Contribuição
-Faça um fork do projeto
+🤝 Como Contribuir
+Faça um Fork do projeto
 
-Crie uma branch: git checkout -b minha-feature
+Crie sua Branch (git checkout -b feature/novo-recurso)
 
-Commit suas mudanças: git commit -m 'feat: Minha nova feature'
+Commit suas mudanças (git commit -m 'Adiciona novo recurso')
 
-Push para a branch: git push origin minha-feature
+Push para a Branch (git push origin feature/novo-recurso)
 
 Abra um Pull Request
 
 📜 Licença
-Distribuído sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+Distribuído sob a licença MIT. Veja LICENSE para mais informaçõ
 
 <div align="center"> <sub>Desenvolvido com ❤️ por <a href="https://github.com/Tatianakami">Tatiana Kami</a></sub> </div> ```
